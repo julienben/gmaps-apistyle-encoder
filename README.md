@@ -17,12 +17,22 @@ import encodeMapStyles from 'gmaps-apistyle-encoder';
 
 styles = [
   {
-    "featureType": "administrative.land_parcel",
-    "stylers": [{ "visibility": "off" }]
+    "featureType": "road.arterial",
+    "elementType": "labels",
+    "stylers": [{"visibility": "off"}]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels",
+    "stylers": [{"visibility": "off"}]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [{"visibility": "off"}]
   }
 ];
 
-const apistyles = encodeMapStyles(styles); // Returns s.t%3A21%7Cp.v%3Aoff
+const apistyles = encodeMapStyles(styles); // Returns "s.t%3A50%7Cs.e%3Al%7Cp.v%3Aoff%2Cs.t%3A49%7Cs.e%3Al%7Cp.v%3Aoff%2Cs.t%3A51%7Cp.v%3Aoff"
 
 const url = 'http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga&apistyle=' + apistyles
 ```
