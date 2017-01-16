@@ -11,8 +11,7 @@ Turned into an npm package by myself but based on [posts by Dr.Molle and Manuel 
 
 Create your own map styling JSON at https://mapstyle.withgoogle.com/, encode it and add it with the apistyle parameter.
 
-```
-#!javascript
+```js
 
 import encodedMapStyles from 'google-maps-apistyle-encoder';
 
