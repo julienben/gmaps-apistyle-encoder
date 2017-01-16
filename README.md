@@ -31,4 +31,6 @@ const url = 'http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga&apisty
 
 ## Installation
 
+```
 npm i -S google-maps-apistyle-encoder
+```
