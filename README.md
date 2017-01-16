@@ -13,7 +13,7 @@ Create your own map styling JSON at https://mapstyle.withgoogle.com/, encode it 
 
 ```js
 
-import encodedMapStyles from 'google-maps-apistyle-encoder';
+import encodeMapStyles from 'gmaps-apistyle-encoder';
 
 styles = [
   {
@@ -22,7 +22,7 @@ styles = [
   }
 ];
 
-const apistyles = encodedMapStyles(styles); // Return s.t%3A21%7Cp.v%3Aoff
+const apistyles = encodeMapStyles(styles); // Returns s.t%3A21%7Cp.v%3Aoff
 
 const url = 'http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga&apistyle=' + apistyles
 ```
