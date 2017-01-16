@@ -9,7 +9,7 @@ Turned into an npm package by myself but based on [posts by Dr.Molle and Manuel 
 
 ## Usage
 
-Create your own map styling JSON at https://mapstyle.withgoogle.com/, encode it and add it with the apistyle parameter.
+Create your own map styling JSON at https://mapstyle.withgoogle.com/, encode it and add it to your tiles URL with the apistyle parameter.
 
 ```js
 
@@ -27,7 +27,7 @@ const apistyles = encodedMapStyles(styles); // Return s.t%3A21%7Cp.v%3Aoff
 const url = 'http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga&apistyle=' + apistyles
 ```
 
-**Warning**: It's possible that newer featureTypes or elementTypes are unknown to the encoder. Please let me know if you see a mismatch.
+**Warning**: It's possible that newer featureTypes or elementTypes are unknown to the encoder. Please open an issue if you see a mismatch.
 
 ## Installation
 
