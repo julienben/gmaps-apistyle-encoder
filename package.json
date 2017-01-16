@@ -1,0 +1,20 @@
+{
+  "name": "gmaps-apistyle-encoder",
+  "version": "0.0.1",
+  "description": "Small utility to encode your styles when requesting map tiles from Google",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/julienben/gmaps-apistyle-encoder.git"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "babel index.js --presets babel-preset-es2015 -o dist/index.js"
+  },
+  "author": "Julien Benchetrit",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
